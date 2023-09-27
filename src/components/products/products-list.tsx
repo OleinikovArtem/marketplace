@@ -8,8 +8,8 @@ export async function ProductsList(props: Props) {
   const products = await db.product.findMany()
 
   return (
-    <div className=" mx-auto w-max">
-      <div className="flex flex-wrap gap-5 items-start justify-left p-10">
+    <div className="mx-auto w-max">
+      <div className="flex flex-wrap gap-5 items-start justify-left py-10">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

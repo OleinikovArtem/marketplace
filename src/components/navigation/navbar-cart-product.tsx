@@ -12,7 +12,7 @@ export function NavbarCartProduct({ product }: Props) {
   const cart = useCart()
 
   return (
-    <div className="flex py-3">
+    <div className="flex pb-3">
       <Image
         src={product.image}
         width="120"
@@ -20,10 +20,10 @@ export function NavbarCartProduct({ product }: Props) {
         alt={product.name}
         className="rounded"
       />
-      <div>
-        <p className="pl-3 py-3 text-sm">{product.name}</p>
+      <div className="px-3 w-full">
+        <p className=" py-3 text-sm">{product.name}</p>
         <Separator />
-        <p className="pl-3 py-3 text-sm">price: {product.price}$</p>
+        <p className=" py-3 text-sm">price: {product.price}$</p>
         <div className="flex justify-between p-3">
           <p className="flex">
             <strong className="mr-2">count:</strong>
