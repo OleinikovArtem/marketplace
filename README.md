@@ -1,5 +1,16 @@
 TODO:
+---
+---
 
-- create endpoint `createProduct` / `createMenyProducts`
-- <ProductItem />
-- <ProductList />
+- [ ] Product filters
+- [x] Product page
+- [ ] Tabs with descriptions
+- [ ] Comments / feedback
+
+---
+
+- [ ] Cart page
+- [ ] Payment
+- [ ] Order page
+
+---

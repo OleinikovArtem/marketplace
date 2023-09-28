@@ -39,16 +39,19 @@ function CartItem() {
 
 export function Navbar(props: Props) {
   return (
-    <div className="fixed container top-0 bg-white w-full dark:bg-zinc-700">
-      <NavigationMenu className="max-w-full">
-        <NavigationMenuList className="flex justify-center gap-4">
-          <NavigationMenuItem>Logo</NavigationMenuItem>
-          <NavigationMenuItem className="navigation__cart__item">
-            <CartItem />
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
-      <Separator />
-    </div>
+    <>
+      <div className="fixed top-0 bg-white w-full dark:bg-zinc-700">
+        <NavigationMenu className="max-w-full container">
+          <NavigationMenuList className="flex justify-center gap-4">
+            <NavigationMenuItem>Logo</NavigationMenuItem>
+            <NavigationMenuItem className="navigation__cart__item">
+              <CartItem />
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        <Separator />
+      </div>
+      <div className="h-[40px]"></div>
+    </>
   )
 }

@@ -11,7 +11,7 @@ export async function ProductsList(props: Props) {
     <div className="mx-auto w-max">
       <div className="flex flex-wrap gap-5 items-start justify-left py-10">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard product={product} key={product.id} />
         ))}
       </div>
     </div>
